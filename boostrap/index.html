@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfing Project (Reproduction)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Mon CSS personnalisé minimal ici */
+        /* ... */
+        /* Style personnalisé minimal pour la superposition de l'en-tête */
+
+        html, body {
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            .HomeNavbar {
+                position: fixed !important;
+            }
+            #primis_placeholder {
+                width: 135px !important;
+                margin-bottom: 24px;
+            }
+            #placeHolder,
+            [id^="Player-Div-Sekindo"],
+            [id^="Video-iFrame-Sekindo"],
+            [id^="Video-iFrame-Sekindo"] iframe,
+            #imaSlotContainer {
+                width: 135px !important;
+            }
+            [id^="primis_playerSekindo"] {
+                left: 0 !important;
+                width: 135px !important;
+            }
+            #playlistLayoutElement {
+                display: none !important;
+                width: 135px !important;
+                margin-left: 0 !important;
+            }
+            #closeContainer {
+                top: 0 !important;
+            }
+            #closeIcon {
+                float: left !important;
+            }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Surfing Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Le programme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nos prochaines sessions</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid p-0">
+        <img src="placeholder-surf.webp" alt="Image de surf" class="img-fluid">
+        <div class="container text-center py-5">
+            <h1>Apprendre le surf en peer learning</h1>
+            <p class="lead">Rejoignez notre communauté de passionnés et progressez ensemble.</p>
+            <a href="#" class="btn btn-primary btn-lg">En savoir plus</a>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                <h3>Apprendre ensemble</h3>
+                <p>Bénéficiez de l'expérience des autres et partagez vos connaissances.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-wave-square fa-3x text-success mb-3"></i>
+                <h3>Des sessions adaptées</h3>
+                <p>Des groupes de niveaux et des spots adaptés à votre progression.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-handshake fa-3x text-info mb-3"></i>
+                <h3>Une communauté soudée</h3>
+                <p>Rencontrez des personnes partageant votre passion pour le surf.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h2>Témoignages</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sophie L.</h5>
+                        <p class="card-text">"J'ai adoré apprendre avec le Surfing Project ! L'ambiance est super et j'ai progressé beaucoup plus vite que je ne l'aurais imaginé."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Marc D.</h5>
+                        <p class="card-text">"Une super expérience de peer learning. On se motive les uns les autres et les conseils sont toujours pertinents."</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="container py-5">
+        <h2>Nos tarifs</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Session découverte</h5>
+                        <h2 class="card-subtitle mb-2 text-muted">25€</h2>
+                        <p class="card-text">Une première session pour essayer.</p>
+                        <a href="#" class="btn btn-outline-primary">Réserver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pack 5 sessions</h5>
+                        <h2 class="card-subtitle mb-2 text-muted">110€</h2>
+                        <p class="card-text">Pour progresser à votre rythme.</p>
+                        <a href="#" class="btn btn-primary">Réserver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Abonnement annuel</h5>
+                        <h2 class="card-subtitle mb-2 text-muted">350€</h2>
+                        <p class="card-text">Accès illimité aux sessions.</p>
+                        <a href="#" class="btn btn-outline-success">S'abonner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light py-3 text-center">
+        <p>&copy; 2023 Surfing Project - Apprendre, partager, surfer.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
